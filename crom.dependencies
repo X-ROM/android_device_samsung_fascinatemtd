@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "X-ROM/android_device_samsung_aries-common",
+    "target_path": "device/samsung/aries-common"
+  },
+  {
+    "remote":     "cm",
+    "repository": "android_kernel_samsung_aries",
+    "target_path": "kernel/samsung/aries",
+    "revision":    "cm-11.0"
+  }
+]
