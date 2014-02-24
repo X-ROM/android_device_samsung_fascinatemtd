@@ -1,18 +1,22 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/cdma.mk)
+$(call inherit-product, vendor/crom/config/common_cdma.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := Fascinate
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common C-RoM stuff.
+$(call inherit-product, vendor/crom/config/common_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/fascinatemtd/full_fascinatemtd.mk)
 
+# media
+PRODUCT_COPY_FILES += \
+    vendor/crom/prebuilt/common/media/hdpi/bootanimation.zip:system/media/bootanimation.zip
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := fascinatemtd
-PRODUCT_NAME := cm_fascinatemtd
+PRODUCT_NAME := crom_fascinatemtd
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SCH-I500
 
