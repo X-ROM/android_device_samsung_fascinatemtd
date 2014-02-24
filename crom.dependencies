@@ -5,7 +5,7 @@
   },
   {
     "remote":     "cm",
-    "repository": "android_kernel_samsung_aries",
+    "repository": "CyanogenMod/android_kernel_samsung_aries",
     "target_path": "kernel/samsung/aries",
     "revision":    "cm-11.0"
   }
